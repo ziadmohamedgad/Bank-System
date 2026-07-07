@@ -30,7 +30,7 @@ private:
 	static void _goBackToMainMenue()
 	{
 		cout << "\n\tPress any key to go back to Main Menue...\n";
-		system("pause > 0");
+		system("pause>nul");
 		showMainMenue();
 	}
 	static void _showClientsListScreen()

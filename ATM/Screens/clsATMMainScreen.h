@@ -27,7 +27,7 @@ private:
     static void _GoBackToATMMenu()
     {
         cout << "\n\tPress any key to go back to ATM Menu...\n";
-        system("pause > 0");
+        system("pause>nul");
         ShowATMMainMenu();
     }
 

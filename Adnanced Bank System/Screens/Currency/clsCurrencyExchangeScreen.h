@@ -23,7 +23,7 @@ private:
 	static void _goBackCurrencyExchangeMenue()
 	{
 		cout << "\nPress any key to go back to Currencies Menue...\n";
-		system("pause > 0");
+		system("pause>nul");
 		ShowCurrencyExchangeScreen();
 	}
 	static void _showListCurrenciesScreen()

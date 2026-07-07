@@ -24,7 +24,7 @@ private:
 	static void _GoBackToTransactionsMenueScreen()
 	{
 		cout << "\n\tPress any key to go back to Transactions Menue...\n";
-		system("pause > 0");
+		system("pause>nul");
 		ShowTransactions();
 	}
 	static void _ShowDepositScreen()

@@ -9,6 +9,6 @@ int main()
 	{
 		if (!clsLoginScreen::ShowLoginScreen()) break;
 	}
-	system("pause > 0");
+	system("pause>nul");
 	return 0;
 }

@@ -33,7 +33,7 @@ private:
         {
             cout << "\nThe amount exceeds your balance, make another choice.\n";
             cout << "Press Any key to continue...";
-            system("pause>0");
+            system("pause>nul");
             ShowQuickWithdrawScreen();
             return;
         }
