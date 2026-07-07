@@ -35,7 +35,7 @@ private:
 	{
 		vector<clsCurrency> _vCurrencies;
 		fstream _Myfile;
-		_Myfile.open("Currencies.txt", ios::in);
+		_Myfile.open("Data/Currencies.txt", ios::in);
 		if (_Myfile.is_open())
 		{
 			string _dataLine = "";
@@ -50,7 +50,7 @@ private:
 	static void _SaveCurrencyDataToFile(vector<clsCurrency> vCurrencies)
 	{
 		fstream _Myfile;
-		_Myfile.open("Currencies.txt", ios::out);
+		_Myfile.open("Data/Currencies.txt", ios::out);
 		if (_Myfile.is_open())
 		{
 			for (clsCurrency C : vCurrencies)
@@ -111,7 +111,7 @@ public:
 	{
 		CurrencyCode = clsString::UpperAllString(CurrencyCode);
 		fstream Myfile;
-		Myfile.open("Currencies.txt", ios::in);
+		Myfile.open("Data/Currencies.txt", ios::in);
 		if (Myfile.is_open())
 		{
 			string dataLine = "";
@@ -132,7 +132,7 @@ public:
 	{
 		Country = clsString::UpperAllString(Country);
 		fstream Myfile;
-		Myfile.open("Currencies.txt", ios::in);
+		Myfile.open("Data/Currencies.txt", ios::in);
 		if (Myfile.is_open())
 		{
 			string dataLine = "";

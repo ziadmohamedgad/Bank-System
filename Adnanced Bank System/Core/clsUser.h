@@ -52,7 +52,7 @@ private:
 	{
 		vector<clsUser> vUsers;
 		fstream MyFile;
-		MyFile.open("Users.txt", ios::in);
+		MyFile.open("Data/Users.txt", ios::in);
 		if (MyFile.is_open())
 		{
 			string dataLine = "";
@@ -67,7 +67,7 @@ private:
 	void _saveUsersDataToFile(vector <clsUser> vUsers)
 	{
 		fstream MyFile;
-		MyFile.open("Users.txt", ios::out);
+		MyFile.open("Data/Users.txt", ios::out);
 		if (MyFile.is_open())
 		{
 			for (clsUser& U : vUsers)
@@ -100,7 +100,7 @@ private:
 	void _addDataLineToFile(string dataLine)
 	{
 		fstream MyFile;
-		MyFile.open("Users.txt", ios::out | ios::app);
+		MyFile.open("Data/Users.txt", ios::out | ios::app);
 		if (MyFile.is_open())
 		{
 			MyFile << dataLine << endl;
@@ -178,7 +178,7 @@ public:
 	static clsUser Find(string UserName)
 	{
 		fstream MyFile;
-		MyFile.open("Users.txt", ios::in);
+		MyFile.open("Data/Users.txt", ios::in);
 		if (MyFile.is_open())
 		{
 			string dataLine = "";
@@ -198,7 +198,7 @@ public:
 	static clsUser Find(string UserName, string Password)
 	{
 		fstream MyFile;
-		MyFile.open("Users.txt", ios::in);
+		MyFile.open("Data/Users.txt", ios::in);
 		if (MyFile.is_open())
 		{
 			string dataLine = "";
@@ -285,7 +285,7 @@ public:
 	{
 		string dataLine = _PrepareLogInRecord();
 		fstream Myfile;
-		Myfile.open("LoginRegister.txt", ios::out | ios::app);
+		Myfile.open("Data/LoginRegister.txt", ios::out | ios::app);
 		if (Myfile.is_open())
 		{
 			Myfile << dataLine << endl;
@@ -296,7 +296,7 @@ public:
 	{
 		vector<stLoginRegisterRecord> vLoginRegisterRecord;
 		fstream Myfile;
-		Myfile.open("LoginRegister.txt", ios::in);
+		Myfile.open("Data/LoginRegister.txt", ios::in);
 		if (Myfile.is_open())
 		{
 			string dataLine = "";

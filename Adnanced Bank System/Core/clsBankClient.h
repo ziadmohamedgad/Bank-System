@@ -39,7 +39,7 @@ private:
     {
         vector <clsBankClient> vClients;
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::in);//read Mode
+        MyFile.open("Data/Clients.txt", ios::in);//read Mode
         if (MyFile.is_open())
         {
             string Line;
@@ -55,7 +55,7 @@ private:
     static void _SaveCleintsDataToFile(vector <clsBankClient> vClients)
     {
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::out);//overwrite
+        MyFile.open("Data/Clients.txt", ios::out);//overwrite
         string DataLine;
         if (MyFile.is_open())
         {
@@ -91,7 +91,7 @@ private:
     void _AddDataLineToFile(string  stDataLine)
     {
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::out | ios::app);
+        MyFile.open("Data/Clients.txt", ios::out | ios::app);
         if (MyFile.is_open())
         {
             MyFile << stDataLine << endl;
@@ -118,7 +118,7 @@ private:
     {
         string dataLine = _PrepareTransferLogRecord(Amount, DestinationClient, UserName);
         fstream Myfile;
-        Myfile.open("TransferLog.txt", ios::out | ios::app);
+        Myfile.open("Data/TransferLog.txt", ios::out | ios::app);
         if (Myfile.is_open())
         {
             Myfile << dataLine << endl;
@@ -189,7 +189,7 @@ public:
     static clsBankClient Find(string AccountNumber)
     {
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::in);
+        MyFile.open("Data/Clients.txt", ios::in);
 
         if (MyFile.is_open())
         {
@@ -210,7 +210,7 @@ public:
     static clsBankClient Find(string AccountNumber, string PinCode)
     {
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::in);
+        MyFile.open("Data/Clients.txt", ios::in);
         if (MyFile.is_open())
         {
             string Line;
@@ -329,7 +329,7 @@ public:
     {
         vector<stTransferLogRecord> vTransferLogRecord;
         fstream Myfile;
-        Myfile.open("TransferLog.txt", ios::in);
+        Myfile.open("Data/TransferLog.txt", ios::in);
         if (Myfile.is_open())
         {
             string dataLine = "";

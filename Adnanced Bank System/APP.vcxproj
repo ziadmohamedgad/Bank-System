@@ -30,26 +30,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -77,6 +77,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)Lib;$(ProjectDir)Screens;$(ProjectDir)Screens\Client;$(ProjectDir)Screens\User;$(ProjectDir)Screens\Transaction;$(ProjectDir)Screens\Currency;$(ProjectDir)Screens\Login;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -91,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)Lib;$(ProjectDir)Screens;$(ProjectDir)Screens\Client;$(ProjectDir)Screens\User;$(ProjectDir)Screens\Transaction;$(ProjectDir)Screens\Currency;$(ProjectDir)Screens\Login;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -105,6 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)Lib;$(ProjectDir)Screens;$(ProjectDir)Screens\Client;$(ProjectDir)Screens\User;$(ProjectDir)Screens\Transaction;$(ProjectDir)Screens\Currency;$(ProjectDir)Screens\Login;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)Lib;$(ProjectDir)Screens;$(ProjectDir)Screens\Client;$(ProjectDir)Screens\User;$(ProjectDir)Screens\Transaction;$(ProjectDir)Screens\Currency;$(ProjectDir)Screens\Login;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,43 +135,43 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="clsAddNewUserScreen.h" />
-    <ClInclude Include="clsBankClient.h" />
-    <ClInclude Include="clsClientsListScreen.h" />
-    <ClInclude Include="clsCurrency.h" />
-    <ClInclude Include="clsCurrencyCalculatorScreen.h" />
-    <ClInclude Include="clsCurrencyExchangeScreen.h" />
-    <ClInclude Include="clsDate.h" />
-    <ClInclude Include="clsDeleteClientScreen.h" />
-    <ClInclude Include="clsDeleteUserScreen.h" />
-    <ClInclude Include="clsDepositScreen.h" />
-    <ClInclude Include="clsFindClientScreen.h" />
-    <ClInclude Include="clsFindCurrencyScreen.h" />
-    <ClInclude Include="clsFindUserScreen.h" />
-    <ClInclude Include="clsInputValidate.h" />
-    <ClInclude Include="clsCurrienciesListScreen.h" />
-    <ClInclude Include="clsUpdateRateScreen.h" />
-    <ClInclude Include="InterfaceCommunication.h" />
-    <ClInclude Include="clsListUsersScreen.h" />
-    <ClInclude Include="clsLoginRegisterScreen.h" />
-    <ClInclude Include="clsLoginScreen.h" />
-    <ClInclude Include="clsMainScreen.h" />
-    <ClInclude Include="clsManageUsersScreen.h" />
-    <ClInclude Include="clsPeriod.h" />
-    <ClInclude Include="clsPerson.h" />
-    <ClInclude Include="clsScreen.h" />
-    <ClInclude Include="clsAddNewClientMenue.h" />
-    <ClInclude Include="clsString.h" />
-    <ClInclude Include="clsTotalBalances.h" />
-    <ClInclude Include="clsTransactionsScreen.h" />
-    <ClInclude Include="clsTransferLogScreen.h" />
-    <ClInclude Include="clsTransferScreen.h" />
-    <ClInclude Include="clsUpdateClientScreen.h" />
-    <ClInclude Include="clsUpdateUserScreen.h" />
-    <ClInclude Include="clsUser.h" />
-    <ClInclude Include="clsUtility.h" />
-    <ClInclude Include="clsWithdrawScreen.h" />
-    <ClInclude Include="Global.h" />
+    <ClInclude Include="Screens\User\clsAddNewUserScreen.h" />
+    <ClInclude Include="Core\clsBankClient.h" />
+    <ClInclude Include="Screens\Client\clsClientsListScreen.h" />
+    <ClInclude Include="Core\clsCurrency.h" />
+    <ClInclude Include="Screens\Currency\clsCurrencyCalculatorScreen.h" />
+    <ClInclude Include="Screens\Currency\clsCurrencyExchangeScreen.h" />
+    <ClInclude Include="Lib\clsDate.h" />
+    <ClInclude Include="Screens\Client\clsDeleteClientScreen.h" />
+    <ClInclude Include="Screens\User\clsDeleteUserScreen.h" />
+    <ClInclude Include="Screens\Transaction\clsDepositScreen.h" />
+    <ClInclude Include="Screens\Client\clsFindClientScreen.h" />
+    <ClInclude Include="Screens\Currency\clsFindCurrencyScreen.h" />
+    <ClInclude Include="Screens\User\clsFindUserScreen.h" />
+    <ClInclude Include="Lib\clsInputValidate.h" />
+    <ClInclude Include="Screens\Currency\clsCurrienciesListScreen.h" />
+    <ClInclude Include="Screens\Currency\clsUpdateRateScreen.h" />
+    <ClInclude Include="Lib\InterfaceCommunication.h" />
+    <ClInclude Include="Screens\User\clsListUsersScreen.h" />
+    <ClInclude Include="Screens\Login\clsLoginRegisterScreen.h" />
+    <ClInclude Include="Screens\Login\clsLoginScreen.h" />
+    <ClInclude Include="Screens\clsMainScreen.h" />
+    <ClInclude Include="Screens\User\clsManageUsersScreen.h" />
+    <ClInclude Include="Lib\clsPeriod.h" />
+    <ClInclude Include="Core\clsPerson.h" />
+    <ClInclude Include="Screens\clsScreen.h" />
+    <ClInclude Include="Screens\Client\clsAddNewClientScreen.h" />
+    <ClInclude Include="Lib\clsString.h" />
+    <ClInclude Include="Screens\Transaction\clsTotalBalances.h" />
+    <ClInclude Include="Screens\Transaction\clsTransactionsScreen.h" />
+    <ClInclude Include="Screens\Transaction\clsTransferLogScreen.h" />
+    <ClInclude Include="Screens\Transaction\clsTransferScreen.h" />
+    <ClInclude Include="Screens\Client\clsUpdateClientScreen.h" />
+    <ClInclude Include="Screens\User\clsUpdateUserScreen.h" />
+    <ClInclude Include="Core\clsUser.h" />
+    <ClInclude Include="Lib\clsUtility.h" />
+    <ClInclude Include="Screens\Transaction\clsWithdrawScreen.h" />
+    <ClInclude Include="Lib\Global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
