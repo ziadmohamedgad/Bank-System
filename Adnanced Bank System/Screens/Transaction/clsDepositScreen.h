@@ -24,6 +24,7 @@ public:
     static void ShowDepositScreen()
     {
         _drawScreenHeader("\t  Deposit Screen");
+        cout << "\nPlease Enter Account Number: ";
         string AccountNumber = clsInputValidate<string>::ReadString();
         while (!clsBankClient::IsClientExist(AccountNumber))
         {
