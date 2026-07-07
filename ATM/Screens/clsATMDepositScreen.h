@@ -9,7 +9,7 @@ class clsATMDepositScreen : protected clsScreen
 public:
     static void ShowDepositScreen()
     {
-        _drawScreenHeader("\t   Deposit Screen", "", CurrentClient.FullName);
+        _drawScreenHeader("\t   Deposit Screen", "", CurrentClient.GetFullName());
         
         cout << "\nEnter a positive Deposit Amount? ";
         double Amount = clsInputValidate<double>::ReadNumber();

@@ -8,7 +8,7 @@ class clsATMCheckBalanceScreen : protected clsScreen
 public:
     static void ShowCheckBalanceScreen()
     {
-        _drawScreenHeader("\t   Check Balance Screen", "", CurrentClient.FullName);
+        _drawScreenHeader("\t   Check Balance Screen", "", CurrentClient.GetFullName());
         cout << "\nYour Balance is  : " << CurrentClient.AccountBalance << "\n";
     }
 };

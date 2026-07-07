@@ -54,7 +54,7 @@ public:
     static void ShowQuickWithdrawScreen()
     {
         system("cls");
-        _drawScreenHeader("\t  Quick Withdraw Screen", "", CurrentClient.FullName);
+        _drawScreenHeader("\t  Quick Withdraw Screen", "", CurrentClient.GetFullName());
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\tQuick Withdraw Menu\n";
         cout << setw(37) << left << "" << "===========================================\n";

@@ -91,7 +91,7 @@ public:
     static void ShowATMMainMenu()
     {
         system("cls");
-        _drawScreenHeader("\t\tATM Main Menu", "", CurrentClient.FullName);
+        _drawScreenHeader("\t\tATM Main Menu", "", CurrentClient.GetFullName());
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  ATM Main Menu\n";
         cout << setw(37) << left << "" << "===========================================\n";
