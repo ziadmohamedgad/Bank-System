@@ -9,7 +9,7 @@ class clsATMNormalWithdrawScreen : protected clsScreen
 public:
     static void ShowNormalWithdrawScreen()
     {
-        _drawScreenHeader("\t  Normal Withdraw Screen");
+        _drawScreenHeader("\t  Normal Withdraw Screen", "", CurrentClient.FullName);
         
         int Amount = 0;
         do

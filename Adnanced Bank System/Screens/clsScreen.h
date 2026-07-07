@@ -7,7 +7,7 @@ using namespace std;
 class clsScreen
 {
 protected:
-    static void _drawScreenHeader(string Title, string SubTitle = "")
+    static void _drawScreenHeader(string Title, string SubTitle = "", string ClientName = "")
     {
         cout << "\t\t\t\t\t______________________________________";
         cout << "\n\n\t\t\t\t\t  " << Title;
@@ -16,7 +16,11 @@ protected:
             cout << "\n\t\t\t\t\t  " << SubTitle;
         }
         cout << "\n\t\t\t\t\t______________________________________\n";
-        if (CurrentUser.UserName != "")
+        if (ClientName != "")
+        {
+            cout << "\n\t\t\t\t\tClient: " << ClientName << "\n";
+        }
+        else if (CurrentUser.UserName != "")
         {
             cout << "\n\t\t\t\t\tUser: " << CurrentUser.UserName << "\n";
         }
