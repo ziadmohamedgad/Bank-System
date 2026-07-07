@@ -9,7 +9,7 @@ class clsATMDepositScreen : protected clsScreen
 public:
     static void ShowDepositScreen()
     {
-        _DrawScreenHeader("\t   Deposit Screen");
+        _drawScreenHeader("\t   Deposit Screen");
         
         cout << "\nEnter a positive Deposit Amount? ";
         double Amount = clsInputValidate<double>::ReadNumber();

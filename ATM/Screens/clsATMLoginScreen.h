@@ -36,7 +36,7 @@ public:
     static bool ShowLoginScreen()
     {
         system("cls");
-        _DrawScreenHeader("\t  ATM Login Screen");
+        _drawScreenHeader("\t  ATM Login Screen");
         return _Login();
     }
 };
