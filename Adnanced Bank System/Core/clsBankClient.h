@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "clsPerson.h"
+#include "clsDate.h"
 #include "clsString.h"
 #include <vector>
 #include <fstream>
