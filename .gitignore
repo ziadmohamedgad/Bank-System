@@ -1,0 +1,32 @@
+# Visual Studio Cache and User Files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build Results (Directories)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# Build Results (Files)
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.cache
+*.obj
+*.log
+*.tlog
+*.idb
+
+# Ignore data text files inside build folders (you copied them next to the exe)
+x64/Debug/*.txt
+x64/Release/*.txt
+
+# If you want to ignore the whole "data" folder (which seems to contain compiled executables), uncomment the line below:
+# data/
